@@ -9,7 +9,7 @@ h1 {
   margin-bottom: 0;
   font-weight: 100;
 }
-weather-app {
+.weather-app {
   max-width: 300px;
   margin: 30px auto;
   padding: 20px;
@@ -18,10 +18,10 @@ weather-app {
 }
 .temperature {
   color: rgb(59, 58, 58);
-
+display: inline-block
   line-height: 60px;
   vertical-align: top;
-  font-size: 48px;
+  font-size: 38px;
 }
 
 ul {
@@ -38,4 +38,7 @@ li {
 }
 .units {
   text-decoration: none;
+}
+.small{
+  text-align:center;
 }
