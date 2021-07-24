@@ -13,6 +13,7 @@
     />
     <title>Insight</title>
   </head>
+  <style src="style.css"></style>
   <body>
     <div class="container">
       <h1>Toronto On, Canada</h1>
@@ -20,17 +21,24 @@
         <li>Friday 8:16 PM</li>
         <li>Partly Cloudy</li>
       </ul>
-      <img
-        src="images/ClipartKey_66291.png"
-        alt="Partially Cloudy"
-        width="50"
-      />
-      <span class="Temperature">23℃|</span><a href="#" class="units">℉</a>
-      <ul>
-        <li>Precipitation: 1%</li>
-        <li>Humidity: 51%</li>
-        <li>Wind: 10 km/h</li>
-      </ul>
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="images/ClipartKey_66291.png"
+            alt="Partially Cloudy"
+            width="50"
+          />
+          <span class="Temperature">23℃|</span><a href="#" class="units">℉</a>
+        </div>
+      </div>
+      <div class="col-6">
+        <ul>
+          <li>Precipitation: 1%</li>
+          <li>Humidity: 51%</li>
+          <li>Wind: 10 km/h</li>
+        </ul>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
