@@ -20,9 +20,11 @@ li {
   font-size: 12px;
   line-height: 20px;
   padding: 0;
-  text-transform: capitalize;
   list-style-type: none;
   margin: 0;
+}
+li:first-letter {
+  text-transform: capitalize;
 }
 .weather-app-wrapper {
   max-width: 500px;
