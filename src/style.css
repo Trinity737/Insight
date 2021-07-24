@@ -9,7 +9,7 @@ h1 {
   margin-bottom: 0;
 }
 .weather-app {
-  max-width: 400px;
+  max-width: 300px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #dadde1;
@@ -21,10 +21,9 @@ h1 {
   line-height: 60px;
   vertical-align: top;
   font-size: 48px;
-}
-span {
   font-size: 16px;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -38,4 +37,7 @@ li {
   padding-top: 6px;
   list-style-type: none;
   margin: 0;
+}
+.units {
+  text-decoration: none;
 }
