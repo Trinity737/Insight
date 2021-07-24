@@ -10,38 +10,45 @@ h1 {
   font-weight: 100;
 }
 .weather-app {
-  max-width: 400px;
+  max-width: 500px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
 .temperature {
   color: rgb(59, 58, 58);
-  display: inline-block;
+  position: relative;
+  top: 20px;
   line-height: 60px;
-  vertical-align: top;
-  font-size: 38px;
+  font-size: 68px;
+  font-weight: bold;
 }
-
 ul {
-  margin: 0;
   padding: 0;
 }
+
 li {
+  position: relative;
+  top: 20px;
   color: #70757a;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 20px;
   padding: 0;
   list-style-type: none;
   margin: 0;
 }
 .units {
+  position: relative;
+  bottom: 20px;
   text-decoration: none;
+}
+
+.celsius {
+  position: relative;
+  bottom: 20px;
+  font-size: medium;
 }
 .small {
   text-align: center;
-}
-.celsius {
-  font-size: medium;
 }
