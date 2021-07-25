@@ -41,7 +41,7 @@
             </form>
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
+              <li>Last updated:<span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -49,7 +49,11 @@
             <div class="col-6">
               <img src="" width="75" id="icon" />
               <span class="temperature" id="degrees"></span
-              ><span class="celsius">℃|</span><a href="#" class="units">℉</a>
+              ><span class="celsius"
+                ><a href="#" id="celsius-link" class="active">℃</a>| </span
+              ><span class="fahrenheit"
+                ><a href="#" id="fahrenheit-link" class="active">℉</a></span
+              >
             </div>
             <div class="col-6">
               <ul>
