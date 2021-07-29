@@ -28,6 +28,7 @@ function formatDay(timestamp) {
 
   return days[day];
 }
+
 function displayForecast(response) {
   let forecast = response.data.daily;
 
@@ -40,22 +41,18 @@ function displayForecast(response) {
         forecastHTML +
         `
     <div class="col-2">
-    <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
-   ${index}
-    <img src=http://openweathermap.org/img/wn/${formatDay(
-      forecastDay.weather[0].icon
-    )}@2x.png";
-    alt="" 
-    width="42" 
-    />
+    <div class="weather-forecast-date">
+    ${formatDay(forecastDay.dt)}</div>
+       ${index}
+       <img src="http://openweathermap.org/img/wn/${
+         forecastDay.weather[0].icon
+       }@2x.png"; alt="" width="42" />
     <div class="weather-forecast-temperatures">
       <span 
-      class="weather-forecast-temperature-max"> ${Math.round(
-        forecastDay.temp.max
-      )}° </span>
-      <span class="weather-forecast-temperature-min"> ${Math.round(
-        forecastDay.temp.min
-      )}° </span>
+      class="weather-forecast-temperature-max"> 
+      ${Math.round(forecastDay.temp.max)}° </span>
+      <span class="weather-forecast-temperature-min"> 
+      ${Math.round(forecastDay.temp.min)}° </span>
     </div>
   </div>
   `;
