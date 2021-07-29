@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
+
   let days = ["Sun", "Mon", "Tues", "Wed", "Thu", "Fri", "Sat"];
 
   return days[day];
@@ -34,15 +35,15 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 1) {
       forecastHTML += `
   <div class="col-2">
     <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
    ${index}
-    <img 
-    src = "http://openweathermap.org/img/wn/${formatDay(
+    <img src = "http://openweathermap.org/img/wn/${formatDay(
       forecastDay.weather[0].icon
-    )}@2x.png"; 
+    )}@2x.png"
+    ; 
     alt="" 
     width="42" 
     />
@@ -57,6 +58,7 @@ function displayForecast(response) {
     </div>
   </div>
   `;
+
       forecastHTML += `</div>`;
       forecastElement.innerHTML = forecastHTML;
     }
@@ -84,7 +86,7 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = Math.round(response.data.wind.speed);
+  windElement.innerHTML = response.data.wind.speed;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
