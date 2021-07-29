@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Insight</title>
   </head>
-  <style src="src/style.css"></style>
   <body>
     <div class="container">
-      <div class="weather-app-wrapper">
+      <div wrapper="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
             <form id="search-form" class="mb-3">
@@ -39,50 +38,56 @@
                 </div>
               </div>
             </form>
-            <h1 id="city"></h1>
-            <ul>
-              <li>Last updated:<span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
           </div>
-          <div class="row">
+          
+            <h1 id="city"></h1>
+            
+              <p>
+                Last updated:
+                <div id="date"></div>
+              </p>
+              <p id="description"></p>
+        
+        <div class="row">
             <div class="col-6">
-              <img src="" width="75" id="icon" />
-              <span class="temperature" id="degrees"></span
-              ><span class="celsius"
-                ><a href="#" id="celsius-link" class="active">℃</a>| </span
-              ><span class="fahrenheit"
-                ><a href="#" id="fahrenheit-link">℉</a></span
-              >
+              <div class="clearfix weather-temperature">
+                <img
+                  src=""
+                  width="75"
+                  alt=""
+                  class="float-left"
+                  id="icon"
+                />
+                  <strong class="weather-temperature" id="degrees"></strong>
+                  <span class="float-left">
+                  <span class="weather-temperature .units">
+                  <a href="#" id="celsius-link" class="active">°C|</a>
+                  <a href="#" id="fahrenheit-link" class="active">°F </a>
+                  </span>
+                 </span>
+               </div>
             </div>
-            <div class="col-6">
+        </div>
+        <span class="float-left">
+            <span class="col-6 clearfix weather-temperature">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind:<span id="wind"></span>km/h</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
+              </span>
+            <div>
             </div>
-          </div>
-          <div class="weather-forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="weather-forecast-date">Thurs</div>
-                <img src="images/ClipartKey_66291.png" alt="" width="42" />
-                <div class="weather-forecast-temperatures">
-                  <span class="weather-forecast-temperature-max">18℃</span>
-                  <span class="weather-forecast-temperature-min">12℃</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
+        </span>
         <small>
           <a href="https://github.com/Trinity737/Insight" target="_blank"
             >Open-source code</a
           >
           by Cheavon Pottinger
         </small>
+         </div>
+        <script src="script/script.js"></script>
       </div>
-    </div>
-    <script src="script/script.js"></script>
+      </div> 
   </body>
 </html>
