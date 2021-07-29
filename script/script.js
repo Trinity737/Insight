@@ -42,7 +42,7 @@ function displayForecast(response) {
     <img 
     src = "http://openweathermap.org/img/wn/${formatDay(
       forecastDay.weather[0].icon
-    }@2x.png"; 
+    )}@2x.png"; 
     alt="" 
     width="42" 
     />
@@ -84,7 +84,7 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
-  windElement.innerHTML = response.data.wind.speed;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",

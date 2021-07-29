@@ -71,9 +71,6 @@ li {
   cursor: default;
   text-decoration: none;
 }
-.col-6-clearfix .weather-temperature {
-  color: red;
-}
 
 .overview {
   margin-bottom: 10px;
