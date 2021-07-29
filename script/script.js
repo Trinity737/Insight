@@ -2,7 +2,7 @@ function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
-    hours = `0${hours}`;
+    hours = `${hours}`;
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -35,15 +35,16 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 1) {
-      forecastHTML += `
-  <div class="col-2">
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        `
+    <div class="col-2">
     <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
    ${index}
-    <img src = "http://openweathermap.org/img/wn/${formatDay(
+    <img src=http://openweathermap.org/img/wn/${formatDay(
       forecastDay.weather[0].icon
-    )}@2x.png"
-    ; 
+    )}@2x.png";
     alt="" 
     width="42" 
     />
@@ -59,11 +60,12 @@ function displayForecast(response) {
   </div>
   `;
 
-      forecastHTML += `</div>`;
+      forecastHTML = forecastHTML + `</div>`;
       forecastElement.innerHTML = forecastHTML;
     }
   });
 }
+
 function getForecast(coordinates) {
   let apiKey = "3e2ce69ce76e734e0f6e4dbc39c85c56";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
