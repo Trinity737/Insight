@@ -14,7 +14,7 @@ h1 {
   margin: 0;
   font-weight: 100;
 }
-p {
+.description {
   margin-bottom: 0;
   color: #70757a;
   text-transform: capitalize;
@@ -90,20 +90,22 @@ li {
 }
 
 .weather-forecast .date {
+  font-size: 16px;
   margin: 0 auto;
   text-align: center;
-  color: #000;
+  color: rgb(29, 17, 17);
 }
 
-.weather-forecast-temperature {
+.weather-forecast-temperatures {
   display: inline;
   left: 100px;
   font-size: 20px;
 }
 
-.weather-forest .forecast.col-4 {
-  margin: 0 auto;
+.weather-forecast {
+  margin-top: 20px;
   border: 1 solid #70757a;
+  text-align: center;
 }
 .celsius {
   position: relative;
