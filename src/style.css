@@ -28,13 +28,14 @@ ul {
 li {
   position: relative;
   bottom: 120px;
-  color: #70757a;
+  color: #19191a;
   font-size: 18px;
   line-height: 20px;
   padding: 0;
   list-style-type: none;
   margin: 0;
-  left: 300px;
+  left: 200px;
+  text-decoration: none;
 }
 .container {
   margin: 0;
@@ -53,6 +54,7 @@ li {
   max-width: 50%;
   margin: 0 auto;
   box-shadow: 2px 2px;
+  background: rgb(229, 231, 231);
 }
 .overview {
   margin-bottom: 10px;
@@ -62,13 +64,14 @@ li {
   text-align: center;
   color: #000;
   text-decoration: none;
+  font-weight: bold;
 }
 .temperature {
   position: relative;
   top: 10px;
   line-height: 60px;
   font-size: 64px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .weather-temperature img {
@@ -106,4 +109,8 @@ li {
 .celsius {
   position: relative;
   bottom: 90px;
+}
+.img {
+  display: block;
+  margin: 0 auto;
 }
