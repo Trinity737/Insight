@@ -14,7 +14,7 @@ h1 {
   margin: 0;
   font-weight: 100;
 }
-.description {
+p {
   margin-bottom: 0;
   color: #70757a;
   text-transform: capitalize;
@@ -102,7 +102,7 @@ li {
   font-size: 20px;
 }
 
-.weather-forecast {
+.weather-forest {
   margin-top: 20px;
   border: 1 solid #70757a;
   text-align: center;
