@@ -4,13 +4,8 @@ body {
   top: 15px;
   left: 10px;
   margin: 0 auto;
-  max-width: 600%;
 }
 
-.container {
-  margin: 0;
-  padding: 10px;
-}
 h1 {
   color: rgb(135, 135, 135);
   max-width: 50%;
@@ -32,7 +27,7 @@ ul {
 
 li {
   position: relative;
-  bottom: 60px;
+  bottom: 120px;
   color: #70757a;
   font-size: 18px;
   line-height: 20px;
@@ -41,57 +36,50 @@ li {
   margin: 0;
   left: 300px;
 }
+.container {
+  margin: 0;
+  padding: 20px;
+}
 
 .weather-app-wrapper {
   max-width: 600px;
   margin: 0 auto;
+  color: #c7cace;
 }
 .weather-app {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid rgb(189, 178, 178);
   border-radius: 10px;
-  max-width: 75%;
-  margin: none;
+  max-width: 50%;
+  margin: 0 auto;
+  box-shadow: 2px 2px;
 }
 .overview {
   margin-bottom: 10px;
 }
 
+.weather-temperature {
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
 .temperature {
-  color: rgb(59, 58, 58);
   position: relative;
-  top: 20px;
+  top: 10px;
   line-height: 60px;
   font-size: 64px;
   font-weight: bold;
 }
 
-.weather-temperature .active {
-  position: relative;
-  bottom: 20px;
-  color: hsl(225, 6%, 13%);
-  cursor: default;
-  text-decoration: none;
-}
-
-.active:hover {
-  cursor: default;
-  text-decoration: none;
-}
-
-.overview {
-  margin-bottom: 10px;
-}
 .weather-temperature img {
-  display: inline-block;
+  display: block;
   margin-right: 10px;
   height: 64px;
   width: 64px;
 }
 .weather-temperature strong {
   position: relative;
-  left: 5px;
-  top: 15px;
+  bottom: 60px;
   color: rgb(33, 33, 33);
   font-size: 62px;
   line-height: 1;
@@ -99,20 +87,23 @@ li {
   margin: none;
 }
 
-.weather-forecast-date {
-  margin-top: 20px;
+.weather-forecast .date {
+  margin: 0 auto;
   text-align: center;
   color: #000;
 }
+
 .weather-forecast-temperature {
+  position: relative;
   font-size: 20px;
-  opacity: 0.5;
 }
-.weather-forecast-temperature-min {
-  opacity: 0.5;
+
+.weather-forest .forecast {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1 solid #70757a;
 }
-.weather-forecast {
-  font-size: 16px;
-  display: inline;
-  color: #000;
+.celsius {
+  position: relative;
+  bottom: 90px;
 }

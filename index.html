@@ -41,14 +41,12 @@
           </div>
           <div>
             <h1 id="city"></h1>
-             <p>Last updated:
-                <div id="date"></div>
-              </p>
+             <p id="date">Last updated:</p>
               <p id="description"></p>
         </div>
-        <div class="row">
-            <span class="col-6">
-              <span class="clearfix weather-temperature">
+        
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
                 <img
                   src=""
                   width="75"
@@ -56,33 +54,30 @@
                   class="float-left"
                   id="icon"
                 />
-                  <strong class="weather-temperature" id="degrees"></strong>
-                  <span class="weather-temperature .units">
-                  <a href="#" id="celsius-link" class="active">°C|</a>
-                  <a href="#" id="fahrenheit-link" class="active">°F </a>
-                  </span>  
-                </span>
-              </span>
+        <span>       
+                 <strong class="weather-temperature" id="degrees"></strong>
+                 <span class="celsius">°C</span>
+       <span class="col-6">
+          <ul>
+           <li>Humidity: <span id="humidity"></span>%</li>
+           <li>Wind: <span id="wind"></span>km/h</li>
+           </ul>
+         </span>
+     <div class="weather-forecast" id="forecast"></div>
         </div>
-        <div class="col-6">
-          <ul class=>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>km/h</li>
-              </ul>
-               </div>  
-        <div class="weather-forecast" id="forecast" ><span class="img"></span>
-        </div>
-         </div>
-         <small>
+          </div>      
+          <small>
           <a href="https://github.com/Trinity737/Insight" target="_blank"
             >Open-source code</a
-          >
+            >
           by Cheavon Pottinger
-        </small>
+         </small>
+        </div>
         </div>
         </div>
        </div>
       </div> 
       <script src="script/script.js"></script>
+    </div>
   </body>
 </html>
