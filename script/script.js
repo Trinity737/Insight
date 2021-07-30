@@ -22,7 +22,7 @@ function formatDate(timestamp) {
 }
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
-  let day = date.getDay(0);
+  let day = date.getDay();
 
   let days = [
     "Sunday",
@@ -44,7 +44,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 4) {
       forecastHTML =
         forecastHTML +
         `
