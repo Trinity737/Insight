@@ -19,7 +19,7 @@ ul {
 li {
   position: relative;
   left: 300px;
-  bottom: 80px;
+  bottom: 110px;
   color: #19191a;
   font-size: 18px;
   line-height: 20px;
@@ -54,9 +54,7 @@ p{
   font-size: 20px;
 }
 
-.float-left {
-  display: block;
-}
+
 .weather-temperature img {
   display: block;
   margin-right: 10px;
@@ -73,16 +71,23 @@ p{
   font-weight: 400;
   margin: none;
 }
-.temperature strong {
+.temperature {
   position: relative;
   left: 90px;
-  bottom: 60px;
+  bottom: 50px;
   color: #000;
   text-decoration: none;
   font-weight: bold;
   line-height: 60px;
   font-size: 64px;
   
+}
+.units {
+  position: relative;
+  left: 100px;
+  bottom: 80px;
+  font-size: 20px;
+  color: rgb(29, 17, 17);
 }
 
 .weather-forecast {
@@ -109,13 +114,7 @@ p{
   margin: none;
 }
 
-.units {
-  position: relative;
-  left: 150px;
-  bottom: 55px;
-  font-size: 13px;
-  color: rgb(29, 17, 17);
-}
+
 .description{
   color:rgb(33, 33, 33)
   font-size: 20px;
