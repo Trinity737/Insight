@@ -44,7 +44,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 4) {
+    if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
@@ -59,13 +59,13 @@ function displayForecast(response) {
       <span 
       class="weather-forecast-temperature-max"> 
       ${Math.round(forecastDay.temp.max)}° </span>
-      
     </div>
   </div>
   `;
 
       forecastHTML = forecastHTML + `</div>`;
       forecastElement.innerHTML = forecastHTML;
+      console.log(forecastHTML);
     }
   });
 }
@@ -107,6 +107,7 @@ function displayTemperature(response) {
 function search(city) {
   let apiKey = "3e2ce69ce76e734e0f6e4dbc39c85c56";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
   axios.get(apiUrl).then(displayTemperature);
 }
 function handleSubmit(event) {

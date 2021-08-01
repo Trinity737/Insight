@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ 
   <link rel="stylesheet" href="styles/styles.css">
   <title>Insight</title>
 </head>
@@ -16,52 +19,51 @@
        <form id="search-form" class="mb-3">
         <div class="row">
           <div class="col-9">
-            <input type="search" placeholder="Type a city..." class="form-control" id="city-input" autocorrect="off" /><div class="col-3"><input type="submit" value="Search" class="btn btn-primary w-100"/>
+            <input 
+            type="search"
+            placeholder="Type a city..." 
+            class="form-control" 
+            id="city-input" 
+            autocorrect="off" />
+            <div class="col-3">
+              <input 
+              type="submit"
+               value="Search" 
+               class="btn btn-primary w-100"/>
                  </div>
                  </div>
-                </div>
-               </form>
+               
           <div class="overview">
           <h1 class="city"></h1>
-          <p id="date"></p>
-          <p id="description"></p>
+          <li><span id="date"></span></li>
+          <li id="description"></li>
           </div>
           <div class="row">
           <div class="col-6">
           <div class="clearfix weather-temperature">
-          <img src=" http://openweathermap.org/img/wn/10d@2x.png"
-                   alt=""
-                    width="46"
-                    id="icon"
-                    class="float-left"
-                    />
-                
-                  <strong class="temperature">23</strong
-                  ><span class="units" id="celsius" class="active">°C</a> 
+          <img src="" alt="" id="icon" class="float-left" />
+          <div class="float-left">
+                  <strong class="temperature" id="degrees"></strong
+                  ><span class="units" id="celsius" class="active">°C
                     </span
                   >  
-          
-         </div>
-        </div>
-     </div>
-  <div class="col-6">
-    <ul>
-    <li>Humidity: <span id="humidity">%</span></li>
-    <li>Wind: <span id="wind">km/h</span></li>
-    </ul>
-  </div>
-      </div>
-      </div>
-      <div class="weather-forecast" id="forecast"></div>
-     </div>
-  </div>
-    <small>
-       <a href="https://github.com/Trinity737/Insight">Open-Source Code</a
-        > by Cheavon Pottinger
-    </small>
-    </div>
-  </div>
-   </div>
-  <script src="src/script.js"></script>
-</body>
+                 </div>
+                 </div>
+                 </div>
+          <div class="col-6">
+             <ul>
+               <li>Humidity: <span id="humidity">%</span></li>
+                 <li>Wind: <span id="wind">km/h</span></li>
+               </ul>
+               
+              </div>
+                </div>
+                  <div class="weather-forecast" id="forecast"></div>
+              </div>
+             <small>
+            <a href="https://github.com/Trinity737/Insight">Open-Source Code</a
+           > by Cheavon Pottinger
+         </small>
+      <script src="src/script.js"></script>
+    </body>
 </html>

@@ -3,11 +3,10 @@ body {
 }
 
 h1 {
-  color: rgb(105, 99, 99);
-  max-width: 50%;
-  font-size: 26px;
+  color: #878787;
+  font-size: 24px;
   line-height: 28px;
-  margin: 0;
+  margin-bottom: 0;
   font-weight: 100;
 }
 
@@ -18,13 +17,13 @@ ul {
 
 li {
   position: relative;
-  left: 300px;
-  bottom: 110px;
-  color: #19191a;
-  font-size: 18px;
-  line-height: 20px;
+  left: 50px;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   text-decoration: none;
 }
@@ -32,13 +31,17 @@ li {
 li::first-letter {
   text-transform: capitalize;
 }
-p{
-  color:rgb(33, 33, 33)
+p {
+  color: rgb(33, 33, 33);
+  font-size: 20px;
 }
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 0 auto;
-  color: #bababa;
+  margin: 30px auto;
+  color: #000;
+}
+.overview {
+  margin-bottom: 10px;
 }
 .weather-app {
   padding: 20px;
@@ -49,22 +52,32 @@ p{
   box-shadow: 2px 2px;
   background: rgb(229, 231, 231);
 }
-.overview {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
 
 .weather-temperature img {
-  display: block;
-  margin-right: 10px;
+  margin-right: 5px;
   height: 64px;
   width: 64px;
 }
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  left: 90px;
+  bottom: 95px;
+  font-size: 20px;
+  color: rgb(29, 17, 17);
+}
+
 .degrees {
   position: relative;
   left: 100px;
-  bottom: 95px;
+  bottom: 90px;
   color: rgb(33, 33, 33);
   font-size: 13 px;
   line-height: 1;
@@ -74,20 +87,12 @@ p{
 .temperature {
   position: relative;
   left: 90px;
-  bottom: 50px;
+  bottom: 60px;
   color: #000;
   text-decoration: none;
   font-weight: bold;
   line-height: 60px;
   font-size: 64px;
-  
-}
-.units {
-  position: relative;
-  left: 100px;
-  bottom: 80px;
-  font-size: 20px;
-  color: rgb(29, 17, 17);
 }
 
 .weather-forecast {
@@ -107,15 +112,14 @@ p{
   font-size: 20px;
 }
 
+.weather-forecast .forecast {
+  display: flex;
+}
+
 .col-3 {
   position: relative;
   left: 450px;
   bottom: 39px;
   margin: none;
-}
-
-
-.description{
-  color:rgb(33, 33, 33)
-  font-size: 20px;
+  padding: 0;
 }
