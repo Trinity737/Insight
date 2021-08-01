@@ -27,7 +27,7 @@ li {
   margin: 0 auto;
   list-style: none;
 }
-li::first-letter {
+p {
   text-transform: capitalize;
 }
 .overview {
@@ -51,7 +51,7 @@ weather-app-wrapper {
   display: block;
   box-sizing: border-box;
 }
-.temperature {
+.temperature strong {
   position: relative;
   left: 60px;
   bottom: 70px;
