@@ -5,7 +5,7 @@ h1 {
   color: #000;
   font-size: 26px;
   margin: none;
-  padding: none;
+  padding-top: 10px;
 }
 ul {
   margin: 0;
@@ -19,7 +19,7 @@ p {
 }
 li {
   position: relative;
-  left: 200px;
+  left: 300px;
   bottom: 160px;
   color: rgb(33, 33, 33);
   font-size: 16px;
@@ -37,10 +37,15 @@ li::first-letter {
   position: relative;
   left: 300px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
   border: 1px solid #dadde1;
   max-width: 50%;
-  box-shadow: 5px 5px 5px rgb(145, 143, 143);
+  box-shadow: 5px 5px 5px rgb(202, 200, 200);
+  padding: 20px;
+  background-color: rgb(123, 228, 241);
+}
+weather-app-wrapper {
+  margin-top: 20px;
 }
 .weather-temperature img {
   display: block;
@@ -48,12 +53,13 @@ li::first-letter {
 }
 .temperature {
   position: relative;
-  left: 50px;
+  left: 60px;
   bottom: 70px;
   font-size: 58px;
 }
 .degrees {
   position: relative;
-  left: 110px;
+  left: 120px;
   bottom: 140px;
+  font-weight: bold;
 }
