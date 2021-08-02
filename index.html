@@ -21,7 +21,7 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form class="search-form" class="mb-3">
+          <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
                 <input
@@ -31,6 +31,7 @@
                   id="city-input"
                   autocomplete="off"
                 />
+                 
               </div>
               <div class="col-3">
                 <input
@@ -40,51 +41,41 @@
                 />
               </div>
             </div>
-          </form>
-          <div class="overview">
+            </form>
+           <div class="overview">
             <h1 id="city"></h1>
-            <p>Last Updated: <span id="date"></span></p>
-            <p id="description"></p>
-          </div>
-          <div class="clearfix weather-temperature">
-            <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt=""
-              width="50"
-              id="icon"
-              class="float-left"
-            />
-            <div class="float-left">
-              <strong id="temperature"></strong>
-              <div class="degrees"><span id="units">℃</span></div>
-            </div>
-          </div>
-          <div class="col-6">
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>km/h</li>
-          </div>
-          <div class="weather-forecast" id="forecast">
-            <div class="row">
-              <div class="col-2">
-                <div class="weather-forecast-date"></div>
+            <ul>
+              <p>Last Updated: <div id="date"></div></p>
+              <p id="description"></p>
+            </ul>
+        </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
                 <img
-                  src="https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}"
-                  alt=""
-                  id="icon"
+                  src="http://openweathermap.org/img/wn/10d@2x.png"
+                  alt="clear"
                   width=""
-                />
-                <div class="weather-forecast-temperatures">
-                  <span class="weather-temperature-max">33</span>
-                </div>
-              </div>
-              <small
-                ><a href="#">Open-Sourced Code</a> by Cheavon Pottinger</small
-              >
+                  id="icon"
+                  />
+               <div class="number"></div>
+                  <strong id="temperature"><strong>
+                  <div class="degrees"><span id="celsiusTemperature">℃</span>
+                  </div>
+            </div>
+            <div class="col-6">
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
             </div>
           </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
       </div>
-    </div>
+      </div>
+       <small>
+         <a href="https://github.com/Trinity737/Insight">Open-Sourced Code</a>
+          by Cheavon Pottinger</small>
+      
     <script src="src/script.js"></script>
   </body>
 </html>

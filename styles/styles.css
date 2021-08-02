@@ -5,61 +5,87 @@ h1 {
   color: #000;
   font-size: 26px;
   margin: none;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 ul {
   margin: 0;
   padding: 0;
 }
-p {
-  color: rgb(33, 33, 33);
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
+
 li {
   position: relative;
   left: 300px;
-  bottom: 160px;
+  bottom: 100px;
   color: rgb(33, 33, 33);
   font-size: 16px;
   line-height: 1;
   margin: 0 auto;
   list-style: none;
 }
-p {
+li::first-letter {
   text-transform: capitalize;
+}
+p {
+  margin: 0;
+  padding: 0;
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  line-height: 1;
+  margin: 0 auto;
+  list-style: none;
+  text-transform: capitalize;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  border-radius: 5px;
+  margin-top: 30px;
+  border: 1px solid #dadde1;
+  box-shadow: 5px 5px 5px rgb(202, 200, 200);
+  padding: 20px;
+  background-color: rgb(181, 239, 247);
 }
 .overview {
   margin-bottom: 10px;
 }
-.weather-app {
-  position: relative;
-  left: 300px;
-  border-radius: 10px;
-  margin-top: 30px;
-  border: 1px solid #dadde1;
-  max-width: 50%;
-  box-shadow: 5px 5px 5px rgb(202, 200, 200);
-  padding: 20px;
-  background-color: rgb(123, 228, 241);
-}
-weather-app-wrapper {
-  margin-top: 20px;
-}
-.weather-temperature img {
-  display: block;
-  box-sizing: border-box;
+.weather-temperature {
+  margin-right: 5px;
+  height: 54px;
+  width: 54px;
 }
 .temperature strong {
-  position: relative;
-  left: 60px;
-  bottom: 70px;
-  font-size: 58px;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
 }
-.degrees {
+.weather-temperature .degrees {
   position: relative;
-  left: 120px;
-  bottom: 140px;
-  font-weight: bold;
+  font-size: 16px;
+  color: red;
+}
+
+.weather-forecast {
+  font-size: 16px;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  font-size: 13px;
+}
+
+.col-3 {
+  position: relative;
+  top: 50px;
+}
+.mb-3 {
+  margin-top: 10px;
+}
+.weather-forecast-date {
+  text-align: center;
+}
+.weather-forecast .forecast {
+  display: block;
+  margin: 0 auto;
 }
