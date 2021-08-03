@@ -46,10 +46,12 @@ function displayForecast(response) {
                   forecastDay.dt
                 )}</div>
                 
-          <img src="http://openweathermap.org/img/wn/${
+          <img src = "http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
           }@2x.png";
+
               alt=""
+              width="42"
                 />
               
                 <div class = "weather-forecast-temperatures">
@@ -74,6 +76,7 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -95,7 +98,7 @@ function displayTemperature(response) {
     `http://api.openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
+  console.log(response.data.coord);
   getForecast(response.data.coord);
 }
 
@@ -114,6 +117,6 @@ function handleSubmit(event) {
 }
 
 let form = document.querySelector("#search-form");
-form.innerHTML = addEventListener("submit", handleSubmit);
+form.addEventListener("submit", handleSubmit);
 
 search("Toronto");
