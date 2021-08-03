@@ -18,26 +18,7 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div class="overview">
-            <h1 id="city"></h1>
-            <p>Last Updated: <div id="date"></div></p>
-            <p id="description"></p>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img src="" alt="clear" width="36" id="icon" />
-              </div>
-              <div class="weather-temperature"></div>
-              <span class="strong" id="temperature"></span>
-
-              <div class="degrees"><span id="celsiusTemperature">℃</span></div>
-
-              <div class="col-6"></div>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span>km/h</li>
-            </div>
-            <form id="search-form" class="mb-3">
+          <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
                 <input
@@ -48,25 +29,45 @@
                   autocomplete="off"
                 />
               </div>
-            </form>
               <div class="col-3">
                 <input
                   type="submit"
                   value="search"
                   class="btn btn-primary w-100"
-                  id="float-left"
                 />
               </div>
             </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last Updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="clear" width="36" id="icon" />
+                <div class="float-left">
+                  <div class="weather-temperature"></div>
+                  <span class="strong" id="temperature"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
-          <small>
-            <a href="https://github.com/Trinity737/Insight"
-              >Open-Sourced Code</a
-            >
-            by Cheavon Pottinger</small
-          >
         </div>
+        <small>
+          <a href="https://github.com/Trinity737/Insight">Open-Sourced Code</a>
+          by Cheavon Pottinger
+        </small>
       </div>
     </div>
     <script src="src/script.js"></script>
