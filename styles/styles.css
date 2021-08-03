@@ -38,7 +38,11 @@ li {
   border: 1px solid #dadde1;
   box-shadow: 5px 5px 5px rgb(202, 200, 200);
   padding: 20px;
-  background-color: rgb(202, 243, 248);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(137, 210, 253) 0%,
+    rgb(255, 241, 188) 90%
+  );
 }
 
 .overview {
