@@ -57,7 +57,7 @@ function displayForecast(response) {
                 <div class = "weather-forecast-temperatures">
                   <span class = "weather-forecast-temperature-max">${Math.round(
                     forecastDay.temp.max
-                  )}°C</span>
+                  )}°</span>
                 </div>
               </div> 
               `;
@@ -76,7 +76,6 @@ function getForecast(coordinates) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -93,12 +92,13 @@ function displayTemperature(response) {
   humidityElement.innerHTML = Math.round(response.data.main.humidity);
   windElement.innerHTML = response.data.wind.speed;
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  console.log(response.data.weather[0].icon);
   iconElement.setAttribute(
     "src",
     `http://api.openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  console.log(response.data.coord);
+
   getForecast(response.data.coord);
 }
 
@@ -112,7 +112,6 @@ function search(city) {
 function handleSubmit(event) {
   event.preventdefault();
   let cityInputElement = document.querySelector("#city-input");
-
   search(cityInputElement.value);
 }
 
