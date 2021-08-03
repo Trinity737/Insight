@@ -55,7 +55,7 @@ function displayForecast(response) {
                 <div class = "weather-forecast-temperatures">
                   <span class = "weather-forecast-temperature-max">${Math.round(
                     forecastDay.temp.max
-                  )}°</span>
+                  )}°C</span>
                 </div>
               </div> 
               `;
@@ -109,10 +109,11 @@ function search(city) {
 function handleSubmit(event) {
   event.preventdefault();
   let cityInputElement = document.querySelector("#city-input");
+
   search(cityInputElement.value);
 }
 
 let form = document.querySelector("#search-form");
-form.innerHTML = addEventListener("search", handleSubmit);
+form.innerHTML = addEventListener("submit", handleSubmit);
 
 search("Toronto");
