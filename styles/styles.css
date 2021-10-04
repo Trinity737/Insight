@@ -1,8 +1,88 @@
 body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: arial, sans-serif;
+}
+h1 {
+  color: #000;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 100;
+  line-height: 18px;
+  max-width: 50%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  color: rgb(135, 135, 135);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  margin: none;
+  padding: none;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  border-radius: 5px;
+  border: 1px solid #dadde1;
+  box-shadow: 5px 5px 5px rgb(202, 200, 200);
+  padding: 20px;
   background: radial-gradient(
-    circle at 50.4% 50.5%,
-    rgb(251, 32, 86) 0%,
-    rgb(135, 2, 35) 90%
+    circle at 10% 20%,
+    rgb(137, 210, 253) 0%,
+    rgb(255, 241, 188) 90%
   );
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  padding: 0;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature strong {
+  position: relative;
+  left: 70px;
+  bottom: 80px;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.units {
+  position: relative;
+  left: 65px;
+  bottom: 115px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+
+.weather-forecast {
+  margin: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
 }
